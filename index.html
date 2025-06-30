@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Meditación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Simulador de Rutina de Meditación</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Creá tu rutina personalizada</h2>
+      <form id="formMeditacion">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="nivel">Nivel espiritual:</label>
+        <select id="nivel" required>
+          <option value="">Seleccionar</option>
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+
+        <label for="objetivo">Objetivo de la meditación:</label>
+        <input type="text" id="objetivo" required>
+
+        <label for="tipo">Tipo de meditación:</label>
+        <select id="tipo" required>
+          <option value="chakra">Chakras</option>
+          <option value="respiracion">Respiración</option>
+          <option value="visualizacion">Visualización</option>
+        </select>
+
+        <button type="submit">Generar rutina</button>
+      </form>
+    </section>
+
+    <section id="resultado">
+      <!-- Aca se agrega la rutina personalizada -->
+    </section>
+
+    <section id="rutinasGuardadas">
+      <h2>Rutinas guardadas</h2>
+      <ul id="listaRutinas"></ul>
+    </section>
+
+    <div class="filtros-container">
+      <select id="filtroTipo">
+        <option value="">Filtrar por tipo</option>
+        <option value="chakra">Chakras</option>
+        <option value="respiracion">Respiración</option>
+        <option value="visualizacion">Visualización</option>
+      </select>
+
+      <select id="filtroNivel">
+        <option value="">Filtrar por nivel</option>
+        <option value="principiante">Principiante</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+      </select>
+    </div>
+
+    <section id="rutinaAleatoria">
+      <button id="cargarAleatoria">Cargar rutina aleatoria</button>
+    </section>
+
+    <section id="borrarRutinas">
+      <button id="borrarRutinas">Borrar todas las rutinas</button>
+    </section>
+
+  </main>
+
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>

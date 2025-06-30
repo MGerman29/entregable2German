@@ -1,2 +1,2 @@
-# Simulador de JS
-Esto es un simulador para entregar como trabajo practico en CoderHouse.
+# Proyecto de simulador entregable JS
+Este es un repositorio de la segunda entrega del trabajo de coderHouse en JS de un simulador. 
